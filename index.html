@@ -8,7 +8,7 @@
   <title>Holiday Gatherings | Pho Saigon</title>
   <meta
     name="description"
-    content="Gather around good food this holiday season at Pho Saigon. Explore menu favorites, party trays, the VIP Room, holiday gifting, and the Pho Saigon Passport."
+    content="Gather around good food this holiday season at Pho Saigon. Explore Party Trays, VIP Room bookings, holiday merch, festive desserts, and the Pho Saigon Passport."
   />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,7 +27,6 @@
       --redwood: #8c4936;
       --redwood-dark: #713927;
       --green: #314a38;
-      --green-light: #526b56;
       --gold: #b99455;
       --ink: #30251f;
       --muted: #776a60;
@@ -54,18 +53,9 @@
       line-height: 1.6;
     }
 
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
     a {
       color: inherit;
       text-decoration: none;
-    }
-
-    button {
-      font: inherit;
     }
 
     .wrap {
@@ -327,100 +317,10 @@
       white-space: nowrap;
     }
 
-    /* Menu favorites */
-    .offerings {
-      padding: 100px 0 95px;
-    }
-
-    .menu-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-
-    .menu-card {
-      display: flex;
-      min-height: 240px;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 25px;
-      border: 1px solid var(--line);
-      background: rgba(255, 250, 242, 0.65);
-      transition: transform 180ms ease, box-shadow 180ms ease;
-    }
-
-    .menu-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow);
-    }
-
-    .menu-card-top {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 12px;
-    }
-
-    .menu-card h3 {
-      margin: 0;
-      color: var(--brown);
-      font-family: var(--serif);
-      font-size: 1.42rem;
-      font-weight: 600;
-      line-height: 1.2;
-    }
-
-    .menu-card .description {
-      margin: 10px 0 0;
-      color: var(--muted);
-      font-size: 0.86rem;
-    }
-
-    .menu-card .price {
-      margin-top: 24px;
-      color: var(--redwood);
-      font-size: 1.03rem;
-      font-weight: 700;
-    }
-
-    .menu-card .category {
-      display: inline-block;
-      margin-top: 18px;
-      color: var(--green);
-      font-size: 0.66rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-    }
-
-    .menu-card.featured {
-      background: var(--brown);
-      color: var(--white);
-    }
-
-    .menu-card.featured h3,
-    .menu-card.featured .description {
-      color: var(--white);
-    }
-
-    .menu-card.featured .price {
-      color: #e2c27e;
-    }
-
-    .menu-card.featured .category {
-      color: #d7b979;
-    }
-
-    .note {
-      margin: 22px 0 0;
-      color: var(--muted);
-      font-size: 0.78rem;
-    }
-
     /* Party trays */
     .party-trays {
       padding: 100px 0;
-      background: var(--cream-deep);
+      background: var(--cream);
     }
 
     .party-layout {
@@ -491,7 +391,8 @@
       text-transform: uppercase;
     }
 
-    .tray-disclaimer {
+    .tray-disclaimer,
+    .small-note {
       margin-top: 18px;
       color: var(--muted);
       font-size: 0.76rem;
@@ -570,6 +471,11 @@
       line-height: 1.1;
     }
 
+    .vip-price span {
+      font-family: var(--sans);
+      font-size: 0.9rem;
+    }
+
     .vip-details {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -598,9 +504,10 @@
       font-size: 0.7rem;
     }
 
-    /* Desserts */
+    /* Festive desserts */
     .desserts {
       padding: 100px 0;
+      background: var(--cream-deep);
     }
 
     .dessert-grid {
@@ -615,8 +522,8 @@
       flex-direction: column;
       justify-content: flex-end;
       padding: 26px;
-      background: linear-gradient(160deg, #e8d9c2, #d8c2a2);
       border: 1px solid rgba(52, 39, 31, 0.1);
+      background: linear-gradient(160deg, #e8d9c2, #d8c2a2);
     }
 
     .dessert-card:nth-child(2) {
@@ -664,7 +571,7 @@
       text-transform: uppercase;
     }
 
-    /* Merch */
+    /* Holiday gifts and merch */
     .gifting {
       padding: 100px 0;
       background: var(--brown);
@@ -753,7 +660,7 @@
       font-size: 0.82rem;
     }
 
-    /* Promo ideas */
+    /* Other holiday activation ideas */
     .promos {
       padding: 100px 0;
       background: var(--white);
@@ -811,7 +718,7 @@
       text-transform: uppercase;
     }
 
-    /* Passport */
+    /* Loyalty passport */
     .passport {
       padding: 100px 0;
       background: var(--redwood);
@@ -906,7 +813,7 @@
       font-size: 0.68rem;
     }
 
-    /* BGC / reservation */
+    /* BGC and reservation CTA */
     .bgc {
       padding: 90px 0;
       background: var(--cream);
@@ -1057,7 +964,6 @@
         gap: 35px;
       }
 
-      .menu-grid,
       .promo-grid {
         grid-template-columns: repeat(2, 1fr);
       }
@@ -1131,7 +1037,6 @@
         white-space: normal;
       }
 
-      .offerings,
       .party-trays,
       .desserts,
       .gifting,
@@ -1140,11 +1045,10 @@
         padding: 72px 0;
       }
 
-      .menu-grid,
+      .party-layout,
       .dessert-grid,
       .promo-grid,
       .gift-layout,
-      .party-layout,
       .vip-inner,
       .passport-inner,
       .bgc-inner {
@@ -1153,10 +1057,6 @@
 
       .party-intro {
         position: static;
-      }
-
-      .menu-card {
-        min-height: 205px;
       }
 
       .vip-card {
@@ -1213,15 +1113,21 @@
         <span class="brand-tagline">Taste of Vietnam</span>
       </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks">
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-expanded="false"
+        aria-controls="navLinks"
+        type="button"
+      >
         Menu
       </button>
 
       <nav class="nav-links" id="navLinks" aria-label="Main navigation">
-        <a href="#offerings">Menu Favorites</a>
         <a href="#party-trays">Party Trays</a>
         <a href="#vip-room">VIP Room</a>
-        <a href="#gifting">Holiday Gifts</a>
+        <a href="#desserts">Holiday Desserts</a>
+        <a href="#gifting">Holiday Merch</a>
         <a href="#passport">Passport</a>
         <a class="nav-cta" href="https://reservations.phosaigon.ph" target="_blank" rel="noopener">
           Reserve a Table
@@ -1237,11 +1143,12 @@
           <p class="eyebrow">The holiday season at Pho Saigon</p>
           <h1>Gather around <span>good food.</span></h1>
           <p class="hero-copy">
-            From shared favorites and party trays to private celebrations,
-            make more room for good food and the people you love this holiday season.
+            From shared feasts and private celebrations to thoughtful gifts
+            and little holiday surprises, make more room for good food and
+            the people you love this season.
           </p>
           <div class="hero-actions">
-            <a class="btn" href="#offerings">Explore the Holiday Table</a>
+            <a class="btn" href="#party-trays">Explore Party Trays</a>
             <a class="btn btn-outline" href="https://reservations.phosaigon.ph" target="_blank" rel="noopener">
               Reserve a Table
             </a>
@@ -1258,106 +1165,6 @@
       </div>
     </div>
 
-    <section class="offerings" id="offerings">
-      <div class="wrap">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Holiday offerings</p>
-          <h2>Make room for everyone’s favorites.</h2>
-          <p>
-            Set the table with Vietnamese dishes to share, from comforting
-            rice plates to savory favorites. These are regular menu items,
-            not discounted bundles.
-          </p>
-        </div>
-
-        <div class="menu-grid">
-          <article class="menu-card featured reveal">
-            <div>
-              <div class="menu-card-top">
-                <h3>Bánh Cuốn</h3>
-              </div>
-              <p class="description">Steamed pork rice rolls</p>
-            </div>
-            <div>
-              <span class="category">For sharing</span>
-              <div class="price">₱399</div>
-            </div>
-          </article>
-
-          <article class="menu-card reveal">
-            <div>
-              <h3>Đậu Hũ Kho Nấm</h3>
-              <p class="description">Braised shiitake mushroom and tofu</p>
-            </div>
-            <div>
-              <span class="category">For sharing</span>
-              <div class="price">₱499</div>
-            </div>
-          </article>
-
-          <article class="menu-card reveal">
-            <div>
-              <h3>Gà Chiên Rau Răm</h3>
-              <p class="description">Vietnamese popcorn chicken bites</p>
-            </div>
-            <div>
-              <span class="category">For sharing</span>
-              <div class="price">₱570</div>
-            </div>
-          </article>
-
-          <article class="menu-card reveal">
-            <div>
-              <h3>Cá Kho</h3>
-              <p class="description">Vietnamese caramelized salmon</p>
-            </div>
-            <div>
-              <span class="category">For sharing</span>
-              <div class="price">₱570</div>
-            </div>
-          </article>
-
-          <article class="menu-card reveal">
-            <div>
-              <h3>Cơm Chiên Bò</h3>
-              <p class="description">Beef fried rice with sunny side up</p>
-            </div>
-            <div>
-              <span class="category">For sharing</span>
-              <div class="price">₱480</div>
-            </div>
-          </article>
-
-          <article class="menu-card reveal">
-            <div>
-              <h3>Cơm Chiên</h3>
-              <p class="description">Vietnamese fried rice</p>
-            </div>
-            <div>
-              <span class="category">For sharing</span>
-              <div class="price">₱390</div>
-            </div>
-          </article>
-
-          <article class="menu-card reveal">
-            <div>
-              <h3>Cơm Chiên Tỏi Trứng</h3>
-              <p class="description">Fried rice with garlic and egg</p>
-            </div>
-            <div>
-              <span class="category">For sharing</span>
-              <div class="price">₱390</div>
-            </div>
-          </article>
-        </div>
-
-        <p class="note">
-          Menu selections and prices shown for reference. Please confirm current
-          availability and pricing with the branch before publishing.
-        </p>
-      </div>
-    </section>
-
     <section class="party-trays" id="party-trays">
       <div class="wrap party-layout">
         <div class="party-intro reveal">
@@ -1368,11 +1175,11 @@
             Make it easy to share with Pho Saigon Party Trays and combo feasts.
           </p>
           <a class="btn btn-dark-outline" href="https://reservations.phosaigon.ph" target="_blank" rel="noopener">
-            Contact Pho Saigon
+            Inquire About Party Trays
           </a>
-          <p class="note">
-            Please contact your preferred branch to confirm ordering,
-            lead time, and availability.
+          <p class="small-note">
+            Contact your preferred branch to confirm ordering, lead time,
+            and availability.
           </p>
         </div>
 
@@ -1436,8 +1243,8 @@
           </div>
 
           <p class="tray-disclaimer">
-            Party Tray menu pricing and serving estimates are subject to
-            confirmation by the branch. Place orders in advance.
+            Party Tray prices and serving estimates are subject to confirmation
+            by the branch. Please place orders in advance.
           </p>
         </div>
       </div>
@@ -1460,7 +1267,9 @@
 
         <div class="vip-card reveal">
           <p class="vip-card-label">Pho Saigon VIP Room</p>
-          <p class="vip-price">₱800 <span style="font-family: var(--sans); font-size: 0.9rem;">/ person consumable</span></p>
+          <p class="vip-price">
+            ₱800 <span>/ person consumable</span>
+          </p>
 
           <div class="vip-details">
             <div class="vip-detail">
@@ -1493,11 +1302,11 @@
       <div class="wrap">
         <div class="section-heading reveal">
           <p class="eyebrow">A sweet little Christmas</p>
-          <h2>Something sweet to share.</h2>
+          <h2>Our desserts, dressed for the season.</h2>
           <p>
-            Give selected Pho Saigon desserts a festive holiday presentation.
-            These are creative serving concepts using existing desserts,
-            subject to kitchen review and approval.
+            Give selected existing desserts a festive presentation.
+            These are creative serving concepts for the kitchen to review,
+            not new menu items yet.
           </p>
         </div>
 
@@ -1505,28 +1314,38 @@
           <article class="dessert-card reveal">
             <div class="dessert-mark">01</div>
             <h3>Christmas Tree Mango Sticky Rice</h3>
-            <p>Explore a tree-inspired arrangement with mango accents.</p>
+            <p>
+              Arrange mango slices into a tree shape and finish with
+              a small festive garnish.
+            </p>
             <span class="concept-label">Presentation idea</span>
           </article>
 
           <article class="dessert-card reveal">
             <div class="dessert-mark">02</div>
             <h3>Festive Ube Mango Sticky Rice</h3>
-            <p>A seasonal plate design with ube, mango, and holiday colors.</p>
+            <p>
+              Style the ube and mango portions in a holiday-inspired
+              plate design with seasonal colors.
+            </p>
             <span class="concept-label">Presentation idea</span>
           </article>
 
           <article class="dessert-card reveal">
             <div class="dessert-mark">03</div>
-            <h3>Mango Sago Holiday Serve</h3>
-            <p>A cheerful festive cup or glass presentation for the season.</p>
+            <h3>Mango Sticky Rice Combo</h3>
+            <p>
+              Present the existing dessert combo as a centerpiece
+              for a shared holiday table.
+            </p>
             <span class="concept-label">Presentation idea</span>
           </article>
         </div>
 
-        <p class="note">
-          Final holiday dessert presentation, serving format, and pricing
-          to be confirmed with the kitchen.
+        <p class="small-note">
+          Final dessert presentation, garnish, serving format, and pricing
+          are subject to kitchen review and approval. Bánh Flan is not included
+          in these holiday dessert concepts.
         </p>
       </div>
     </section>
@@ -1544,7 +1363,7 @@
 
         <div class="gift-layout">
           <div class="gift-panel reveal">
-            <h3>Available pantry items</h3>
+            <h3>Pantry favorites</h3>
             <ul class="gift-list">
               <li>
                 <span>Vietnamese Pâté</span>
@@ -1596,6 +1415,7 @@
                 presented in a holiday gift box.
               </span>
             </div>
+
             <p class="gift-note">
               New merchandise and gift sets are concepts only until
               product selection, costs, and availability are approved.
@@ -1611,9 +1431,9 @@
           <p class="eyebrow">Holiday moments</p>
           <h2>Little surprises. More reasons to gather.</h2>
           <p>
-            Alongside the Pho Saigon Passport, these are possible seasonal
-            activations to consider. Final mechanics and availability must
-            be approved before they are advertised as active promotions.
+            The Pho Saigon Passport is the current loyalty promotion.
+            The following seasonal activations are additional ideas for
+            consideration and require approval before being advertised.
           </p>
         </div>
 
@@ -1622,10 +1442,11 @@
             <span class="promo-number">01</span>
             <h3>The Little Holiday Surprise</h3>
             <p>
-              A small Pho Saigon keepsake, such as a holiday ornament or
-              sticker set, as a complimentary gift with a qualifying dine-in bill.
+              Offer a small Pho Saigon keepsake, such as a holiday ornament
+              or sticker set, as a complimentary gift with a qualifying
+              dine-in bill.
             </p>
-            <span class="promo-tag">Proposed promo · Spend threshold to confirm</span>
+            <span class="promo-tag">Suggested · Spend threshold to confirm</span>
           </article>
 
           <article class="promo-card reveal">
@@ -1635,7 +1456,7 @@
               Include a small approved gift or add-on with selected Party Tray
               orders placed during the holiday campaign.
             </p>
-            <span class="promo-tag">Proposed promo · Eligible orders to confirm</span>
+            <span class="promo-tag">Suggested · Eligible orders to confirm</span>
           </article>
 
           <article class="promo-card reveal">
@@ -1645,7 +1466,40 @@
               Consider a simple festive table setup as a limited-time perk
               for confirmed VIP Room bookings, subject to availability.
             </p>
-            <span class="promo-tag">Proposed VIP Room perk · Approval needed</span>
+            <span class="promo-tag">Suggested · VIP Room perk</span>
+          </article>
+
+          <article class="promo-card reveal">
+            <span class="promo-number">04</span>
+            <h3>12 Days of Pho Saigon</h3>
+            <p>
+              Run a short series of daily holiday features, such as a menu
+              spotlight, a merch reveal, a guest feature, or a small
+              approved surprise. Not every day needs a discount.
+            </p>
+            <span class="promo-tag">Suggested · Campaign series</span>
+          </article>
+
+          <article class="promo-card reveal">
+            <span class="promo-number">05</span>
+            <h3>Holiday Table Photo Moment</h3>
+            <p>
+              Create a festive photo spot or table detail guests can use
+              during their visit, encouraging them to share their gathering
+              and tag Pho Saigon.
+            </p>
+            <span class="promo-tag">Suggested · In-store experience</span>
+          </article>
+
+          <article class="promo-card reveal">
+            <span class="promo-number">06</span>
+            <h3>Gift-a-Gathering</h3>
+            <p>
+              Invite guests to gift a Pho Saigon dining experience to someone
+              they love through approved gift vouchers or a future-visit
+              invitation.
+            </p>
+            <span class="promo-tag">Suggested · Voucher mechanics to confirm</span>
           </article>
         </div>
       </div>
@@ -1665,6 +1519,7 @@
 
         <div class="passport-card reveal">
           <p class="passport-card-title">Your Pho Saigon Passport</p>
+
           <div class="stamp-row" aria-label="Six stamp spaces">
             <div class="stamp">1</div>
             <div class="stamp">2</div>
@@ -1684,9 +1539,9 @@
           </div>
 
           <p class="terms">
-            Proposed loyalty mechanic, subject to final approval.
+            Proposed reward and mechanics, subject to final approval.
             Qualifying visit rules, stamp issuance, reward expiry, branch
-            participation, and redemption terms to be confirmed before launch.
+            participation, and redemption terms must be confirmed before launch.
           </p>
         </div>
       </div>
@@ -1702,6 +1557,7 @@
             over Vietnamese favorites. Bring your teammates, friends, or
             visiting clients together at Pho Saigon.
           </p>
+
           <div class="bgc-list">
             <span>Office lunches</span>
             <span>Team dinners</span>
@@ -1710,6 +1566,7 @@
             <span>Small celebrations</span>
             <span>Group orders</span>
           </div>
+
           <a class="btn" href="https://reservations.phosaigon.ph" target="_blank" rel="noopener">
             Reserve a Table
           </a>
@@ -1730,7 +1587,8 @@
         <h2>Gather around good food.</h2>
         <p>
           Planning a dinner, ordering for a group, or looking for a private
-          space? Get in touch with Pho Saigon and start planning your holiday gathering.
+          space? Get in touch with Pho Saigon and start planning your
+          holiday gathering.
         </p>
         <a class="btn" href="https://reservations.phosaigon.ph" target="_blank" rel="noopener">
           Reserve a Table
@@ -1745,12 +1603,16 @@
         <div class="footer-brand">Pho Saigon</div>
         <div>Taste of Vietnam. Made for sharing.</div>
       </div>
+
       <div class="footer-links">
-        <a href="#offerings">Menu Favorites</a>
         <a href="#party-trays">Party Trays</a>
         <a href="#vip-room">VIP Room</a>
+        <a href="#desserts">Holiday Desserts</a>
+        <a href="#gifting">Holiday Merch</a>
         <a href="#passport">Passport</a>
-        <a href="https://reservations.phosaigon.ph" target="_blank" rel="noopener">Reservations</a>
+        <a href="https://reservations.phosaigon.ph" target="_blank" rel="noopener">
+          Reservations
+        </a>
       </div>
     </div>
   </footer>
@@ -1765,7 +1627,7 @@
       menuToggle.setAttribute("aria-expanded", String(isOpen));
     });
 
-    // Close the mobile menu after a navigation link is selected
+    // Close mobile navigation after selecting a section
     navLinks.querySelectorAll("a").forEach((link) => {
       link.addEventListener("click", () => {
         navLinks.classList.remove("open");
@@ -1773,7 +1635,7 @@
       });
     });
 
-    // Reveal sections as they enter the viewport
+    // Reveal content as it enters the viewport
     const revealItems = document.querySelectorAll(".reveal");
 
     if ("IntersectionObserver" in window) {
